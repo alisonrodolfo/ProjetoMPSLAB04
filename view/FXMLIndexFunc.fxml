@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="360.0" prefWidth="490.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.control.SaldoController">
+    <stylesheets>
+        <URL value="@/css/fxmlcadastro.css" />
+    </stylesheets>
+   <children>
+      <Label id="errorLabel" fx:id="errorLabel" layoutX="35.0" layoutY="293.0" prefHeight="31.0" prefWidth="425.0" />
+      <TextField id="SaldoTextField" fx:id="SaldoTextField" layoutX="191.0" layoutY="91.0" prefHeight="31.0" prefWidth="118.0" />
+      <Button layoutX="97.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleButtonSaqueCC" prefHeight="37.0" prefWidth="102.0" styleClass="buttonred" stylesheets="@../css/fxmlcadastro.css" text="SACAR CC" />
+      <Button layoutX="78.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleButtonDepositoCC" prefHeight="37.0" prefWidth="131.0" styleClass="buttonazul" stylesheets="@../css/fxmlcadastro.css" text="DEPOSITAR CC" />
+      <Button layoutX="281.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleButtonDepositoCP" prefHeight="37.0" prefWidth="131.0" styleClass="buttonazul" stylesheets="@../css/fxmlcadastro.css" text="DEPOSITA CP" />
+      <Button layoutX="289.0" layoutY="232.0" mnemonicParsing="false" onAction="#handleButtonSaqueCP" prefHeight="37.0" prefWidth="102.0" styleClass="buttonred" stylesheets="@../css/fxmlcadastro.css" text="SACAR CP" />
+      <Label layoutX="114.0" layoutY="93.0" prefHeight="21.0" prefWidth="68.0" text="VALOR:" textAlignment="CENTER" textFill="#48a804">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label id="ccLabel" fx:id="ccLabel" layoutX="64.0" layoutY="36.0" prefHeight="31.0" prefWidth="118.0" />
+      <Label id="cpLabel" fx:id="cpLabel" layoutX="319.0" layoutY="36.0" prefHeight="31.0" prefWidth="118.0" />
+   </children>
+</AnchorPane>

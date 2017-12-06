@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="360.0" prefWidth="490.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.control.LoginController">
+    <stylesheets>
+        <URL value="@/css/fxmlcadastro.css" />
+    </stylesheets>
+   <children>
+      <TextField id="LoginTextField" fx:id="LoginTextField" layoutX="192.0" layoutY="110.0" />
+      <Label layoutX="171.0" layoutY="39.0" text="BEM VINDO DE VOLTA" />
+      <Label layoutX="97.0" layoutY="172.0" text="SENHA" />
+      <Label layoutX="101.0" layoutY="115.0" text="LOGIN" />
+      <Button layoutX="157.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonLogin" prefHeight="31.0" prefWidth="160.0" styleClass="buttonazul" stylesheets="@../css/fxmlcadastro.css" text="LOGIN" />
+      <PasswordField id="SenhaPasswordField" fx:id="SenhaPasswordField" layoutX="193.0" layoutY="162.0" />
+      <Label id="errorLabel" fx:id="errorLabel" layoutX="29.0" layoutY="219.0" prefHeight="66.0" prefWidth="435.0" />
+   </children>
+</AnchorPane>

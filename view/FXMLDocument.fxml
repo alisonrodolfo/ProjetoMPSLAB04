@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.control.DocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Pane prefHeight="48.0" prefWidth="523.0" style="-fx-background-color: #1e90ff;">
+         <children>
+            <MenuButton contentDisplay="TOP" layoutX="359.0" layoutY="6.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" styleClass="buttontopmenu" stylesheets="@../css/fxmlcadastro.css" text="Opções" textFill="WHITE">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuItemCadastro" text="Cadastro" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuItemLogin" text="Login" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleMenuItemTodos" text="Consultar Usuarios" />
+                  <MenuItem fx:id="editarSaldo" mnemonicParsing="false" onAction="#handleMenuItemSaldo" text="Editar Saldo" />
+               </items>
+            </MenuButton>
+            <Button layoutX="51.0" layoutY="5.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="188.0" styleClass="buttonazul" stylesheets="@../css/fxmlcadastro.css" text="PROJETO MPS 03" />
+         </children>
+      </Pane>
+      <Pane layoutY="57.0" prefHeight="370.0" prefWidth="523.0">
+         <children>
+            <AnchorPane fx:id="anchorPane" layoutX="4.0" layoutY="6.0" prefHeight="360.0" prefWidth="516.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

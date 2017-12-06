@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="360.0" prefWidth="490.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.control.GeralController">
+    <stylesheets>
+        <URL value="@/css/fxmlcadastro.css" />
+    </stylesheets>
+   <children>
+      <Label id="errorLabel" fx:id="errorLabel" layoutX="34.0" layoutY="245.0" prefHeight="31.0" prefWidth="425.0" />
+      <TableView id="tableViewusUsuario" fx:id="tableViewusUsuario" layoutX="7.0" layoutY="63.0" prefHeight="291.0" prefWidth="476.0">
+        <columns>
+          <TableColumn id="tableColumnLogin" fx:id="tableColumnLogin" prefWidth="128.0" text="LOGIN" />
+            <TableColumn id="tableColumnSenha" fx:id="tableColumnSenha" prefWidth="203.0" text="Senha" />
+          <TableColumn id="tableColumnNome" fx:id="tableColumnNome" prefWidth="135.0" text="NOME" />
+        </columns>
+      </TableView>
+      <Button layoutX="171.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleMenuItemcarregarTableViewUsuario" prefHeight="31.0" prefWidth="152.0" styleClass="buttonred" stylesheets="@../css/fxmlcadastro.css" text="ATUALIZAR LISTA" />
+   </children>
+</AnchorPane>

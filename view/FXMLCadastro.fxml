@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="360.0" prefWidth="490.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.control.CadastroController">
+    <stylesheets>
+        <URL value="@/css/fxmlcadastro.css" />
+    </stylesheets>
+   <children>
+      <TextField id="LoginTextField" fx:id="LoginTextField" layoutX="192.0" layoutY="110.0" />
+      <Label layoutX="171.0" layoutY="39.0" text="SEJA BEM VINDO" />
+      <Label layoutX="97.0" layoutY="172.0" text="SENHA" />
+      <Label layoutX="101.0" layoutY="115.0" text="LOGIN" />
+      <Button id="handleButtonCadastro" fx:id="handleButtonCadastro" layoutX="157.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonCadastro" prefHeight="31.0" prefWidth="160.0" styleClass="buttonazul" stylesheets="@../css/fxmlcadastro.css" text="CADASTRO" />
+      <PasswordField id="SenhaPasswordField" fx:id="SenhaPasswordField" layoutX="193.0" layoutY="163.0" />
+      <Label id="errorLabel" fx:id="errorLabel" layoutX="23.0" layoutY="228.0" prefHeight="60.0" prefWidth="448.0" styleClass="h6" stylesheets="@../css/fxmlcadastro.css" />
+   </children>
+</AnchorPane>
